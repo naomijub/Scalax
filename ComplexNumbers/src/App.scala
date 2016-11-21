@@ -12,5 +12,7 @@ object App {
     println(comp1 equals comp2 toString);
     println(comp1.conjugate() toString);
     println(comp1 / comp2 toString);
+    println(comp1.module() toString);
+    println(comp2.polar() toString);
   }
 }
