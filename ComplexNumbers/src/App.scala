@@ -7,7 +7,6 @@ object App {
     val comp2 = new Complex(2.3, 1.5);
     println(comp1 toString);
     println(comp2 toString);
-    val comp3 = comp1 + comp2
-    println(comp3 toString);
+    println(comp1 + comp2 toString);
   }
 }
