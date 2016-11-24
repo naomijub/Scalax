@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PlayGUI.iml" filepath="$PROJECT_DIR$/PlayGUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PlayMath.iml" filepath="$PROJECT_DIR$/PlayMath.iml" />
     </modules>
   </component>
 </project>
