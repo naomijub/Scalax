@@ -17,4 +17,11 @@ class ChromosomeSpec extends FlatSpec with BeforeAndAfter{
     assert(chromosome.getGenes.size == 44)
   }
 
+  it should "have all genes 0 or 1" in {
+    var i = 0
+    for(i <- chromosome.getGenes){
+      assert(i == 0 || i == 1)
+    }
+  }
+
 }
