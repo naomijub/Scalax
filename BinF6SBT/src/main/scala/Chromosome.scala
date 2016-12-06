@@ -10,4 +10,11 @@ class Chromosome {
     }
     return false
   }
+  def X(arg : Array[Int]) : Double = {
+    var sum = 0.0
+    for(i <- 0 until 22){
+      sum += arg(i) * Math.pow(2.0, i)
+    }
+    return (sum / 20971.51) - 100
+  }
 }
