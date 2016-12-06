@@ -51,11 +51,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chromosome.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EvolveTest.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/EvolveTest.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="81" selection-start-line="15" selection-start-column="81" selection-end-line="15" selection-end-column="81" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chromosome.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Chromosome.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="142" selection-start-line="5" selection-start-column="142" selection-end-line="5" selection-end-column="142" />
+            <state relative-caret-position="105">
+              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -74,6 +86,7 @@
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/test/scala/ChromosomeSpec.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Chromosome.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/EvolveTest.scala" />
       </list>
     </option>
   </component>
@@ -214,14 +227,29 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Masters" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="ScalaTest.ChromosomeSpec">
+  <component name="RunManager" selected="ScalaTest.EvolveTest">
     <configuration default="false" name="ChromosomeSpec" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="binf6sbt" />
       <setting name="path" value="ChromosomeSpec" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="EvolveTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="binf6sbt" />
+      <setting name="path" value="EvolveTest" />
       <setting name="package" value="" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
@@ -522,12 +550,14 @@
       <envs />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="ScalaTest.ChromosomeSpec" />
+      <item index="1" class="java.lang.String" itemvalue="ScalaTest.EvolveTest" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="ScalaTest.ChromosomeSpec" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="ScalaTest.EvolveTest" />
+        <item index="1" class="java.lang.String" itemvalue="ScalaTest.ChromosomeSpec" />
       </list>
     </recent_temporary>
   </component>
@@ -575,20 +605,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ChromosomeSpec - 2016.12.06 at 11h 44m 23s.xml">
+    <history-entry file="ChromosomeSpec - 2016.12.06 at 13h 51m 10s.xml">
       <configuration name="ChromosomeSpec" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ChromosomeSpec - 2016.12.06 at 11h 46m 06s.xml">
-      <configuration name="ChromosomeSpec" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="EvolveTest - 2016.12.06 at 13h 51m 22s.xml">
+      <configuration name="EvolveTest" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ChromosomeSpec - 2016.12.06 at 11h 52m 48s.xml">
-      <configuration name="ChromosomeSpec" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="EvolveTest - 2016.12.06 at 13h 52m 22s.xml">
+      <configuration name="EvolveTest" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ChromosomeSpec - 2016.12.06 at 13h 11m 11s.xml">
-      <configuration name="ChromosomeSpec" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="EvolveTest - 2016.12.06 at 13h 54m 39s.xml">
+      <configuration name="EvolveTest" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ChromosomeSpec - 2016.12.06 at 13h 13m 10s.xml">
-      <configuration name="ChromosomeSpec" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="EvolveTest - 2016.12.06 at 13h 56m 30s.xml">
+      <configuration name="EvolveTest" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="EvolveTest - 2016.12.06 at 13h 56m 50s.xml">
+      <configuration name="EvolveTest" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="EvolveTest - 2016.12.06 at 13h 57m 54s.xml">
+      <configuration name="EvolveTest" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="EvolveTest - 2016.12.06 at 13h 58m 19s.xml">
+      <configuration name="EvolveTest" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="EvolveTest - 2016.12.06 at 13h 58m 28s.xml">
+      <configuration name="EvolveTest" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="EvolveTest - 2016.12.06 at 14h 00m 53s.xml">
+      <configuration name="EvolveTest" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -597,7 +642,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959184" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -662,9 +707,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Chromosome.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="142" selection-start-line="5" selection-start-column="142" selection-end-line="5" selection-end-column="142" />
+        <state relative-caret-position="105">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/EvolveTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="81" selection-start-line="15" selection-start-column="81" selection-end-line="15" selection-end-column="81" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
