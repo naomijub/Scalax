@@ -15,6 +15,14 @@ class Chromosome {
     for(i <- 0 until 22){
       sum += arg(i) * Math.pow(2.0, i)
     }
-    return (sum / 20971.51) - 100
+    return (sum / 20971.515) - 100
+  }
+
+  def Y(arg : Array[Int]) : Double = {
+    var sum = 0.0
+    for(i <- 22 until 44){
+      sum += arg(i) * Math.pow(2.0, i - 22)
+    }
+    return (sum / 20971.515) - 100
   }
 }
