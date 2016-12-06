@@ -37,5 +37,8 @@ class EvolveTest extends FunSuite with BeforeAndAfter with MockitoSugar{
     assert(y.toInt == 33)
   }
 
-
+  test("Fitness for Mock Chromossome is "){
+    val fit = chromosome.fitness(mockGenes.getGenes)
+    assert(fit == 0.4100047789612904)
+  }
 }

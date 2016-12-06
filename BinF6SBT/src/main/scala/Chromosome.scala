@@ -25,4 +25,11 @@ class Chromosome {
     }
     return (sum / 20971.515) - 100
   }
+  def fitness(arg : Array[Int]) : Double = {
+    val x = X(arg)
+    val y = Y(arg)
+    val fit = 0.5 - (Math.pow(Math.sqrt((x * x) + (y * y)), 2.0) - 0.5)/(1.0 + (0.001 * Math.pow((x * x) + (y * y) ,2.0)))
+    return fit
+  }
+
 }
