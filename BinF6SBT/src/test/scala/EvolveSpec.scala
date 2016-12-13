@@ -29,5 +29,10 @@ class EvolveSpec extends FlatSpec with BeforeAndAfter with MockitoSugar{
     assert(chromosome.==(mutatedGenes, mockGenes.getGenes) == true)
   }
 
-
+  it should "return a mix of mock and mock2 by half/half" in {
+    val crossedoverGenes = evolve.crossover(mockGenes.getGenes, mockGenes2.getGenes)
+    val mockCrossGene = Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,0, 1, 0,
+      1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+    assert(chromosome.==(crossedoverGenes, mockCrossGene) == false)
+  }
 }
