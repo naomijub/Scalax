@@ -1,4 +1,4 @@
-
+import Array._
 /**
   * Created by jnaomi on 06/12/16.
   */
@@ -17,7 +17,9 @@ class Evolve {
   }
 
   def crossover(arg1: Array[Int], arg2 : Array[Int]) : Array[Int] = {
-    val crossedGene = new Array[Int](44)
+    val crossedGene1 = for (i <- 0 until chromosomeSize if i < chromosomeSize/2) yield arg1(i)
+    val crossedGene2 = for (i <- 0 until chromosomeSize if i >= chromosomeSize/2 && i < chromosomeSize) yield arg2(i)
+    val crossedGene = concat(crossedGene1.toArray, crossedGene2.toArray)
 
     return crossedGene
   }
