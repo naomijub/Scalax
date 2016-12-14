@@ -12,6 +12,8 @@ class EvolveSpec extends FlatSpec with BeforeAndAfter with MockitoSugar{
   val pop : Array[Array[Int]] = Array.fill[Array[Int]](100){chromosome.getGenes()}
   val mockGenes = mock[Chromosome]
   val mockGenes2 = mock[Chromosome]
+  val mockTupleFitIdx = Array((0.5, 3), (0.94, 32), (0.2, 5), (0.8, 51), (0.17, 45))
+
 
   before {
     evolve = new Evolve
@@ -34,5 +36,10 @@ class EvolveSpec extends FlatSpec with BeforeAndAfter with MockitoSugar{
     val mockCrossGene = Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,0, 1, 0,
       1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1)
     assert(chromosome.==(crossedoverGenes, mockCrossGene) == false)
+  }
+
+  it should "return the best fitness index within an Array of tuples(fitness, index)" in {
+    val bestIndex = evolve.roulette(mockTupleFitIdx)
+    assert(bestIndex == 32)
   }
 }
