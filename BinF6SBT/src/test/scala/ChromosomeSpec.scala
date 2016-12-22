@@ -14,7 +14,7 @@ class ChromosomeSpec extends FlatSpec with BeforeAndAfter{
   behavior of "a Chromosome in BinaryF6"
 
   it should "have 44 genes" in {
-    assert(chromosome.getGenes.size == 44)
+    assert(chromosome.getGenes.length == 44)
   }
 
   it should "have all genes 0 or 1" in {

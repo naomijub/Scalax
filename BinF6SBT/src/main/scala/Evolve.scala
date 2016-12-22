@@ -25,7 +25,7 @@ class Evolve {
   }
 
   def roulette(arg1 : Array[Tuple2[Double, Int]]) : Int = {
-    def max(arg1: Tuple2[Double, Int], arg2 : Tuple2[Double, Int]): Tuple2[Double, Int]= if (arg1._1 > arg2._1) arg1 else arg2
+    def max(arg1: Tuple2[Double, Int], arg2 : Tuple2[Double, Int]): Tuple2[Double, Int] = if (arg1._1 > arg2._1) arg1 else arg2
     val bestIndex = arg1.reduceLeft(max)
     return bestIndex._2
   }
