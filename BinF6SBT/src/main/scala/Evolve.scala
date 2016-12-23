@@ -6,6 +6,7 @@ class Evolve {
   val chromosomeSize = 44
   val geneValues = 2
   var rg = new scala.util.Random(141)
+  val chromosome = new Chromosome
 
   def mutate(arg : Array[Int]) : Array[Int] = {
     val gene = rg.nextInt(413) % chromosomeSize
@@ -24,9 +25,20 @@ class Evolve {
     return crossedGene
   }
 
+  def max(arg1: Tuple2[Double, Int], arg2 : Tuple2[Double, Int]): Tuple2[Double, Int] = if (arg1._1 > arg2._1) arg1 else arg2
+
   def roulette(arg1 : Array[Tuple2[Double, Int]]) : Int = {
-    def max(arg1: Tuple2[Double, Int], arg2 : Tuple2[Double, Int]): Tuple2[Double, Int] = if (arg1._1 > arg2._1) arg1 else arg2
     val bestIndex = arg1.reduceLeft(max)
+    return bestIndex._2
+  }
+
+  //should return the whole array
+  def getBest(arg1: Array[Array[Int]]) : Int = {
+    def generateTuplesIdxFit(chromArg: Array[Int], idx: Int) : Tuple2[Double, Int] = {
+      return Tuple2[Double, Int](chromosome.fitness(chromArg), idx)
+    }
+    val popTuples = for(i <- 0 until arg1.length) yield generateTuplesIdxFit(arg1(i), i)
+    val bestIndex = popTuples.reduceLeft(max)
     return bestIndex._2
   }
 }

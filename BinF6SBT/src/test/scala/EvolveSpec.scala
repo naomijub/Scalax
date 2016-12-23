@@ -11,6 +11,18 @@ class EvolveSpec extends FlatSpec with BeforeAndAfter with MockitoSugar{
   val chromosome = new Chromosome
   val mockGenes = mock[Chromosome]
   val mockGenes2 = mock[Chromosome]
+  val mockPop = Array(
+    Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0,
+      1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1),
+    Array(1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0,
+      1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+    Array(1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0,
+      1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1),
+    Array(1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0,
+      1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+    Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0)
+  )
   val mockTupleFitIdx = Array((0.5, 3), (0.94, 32), (0.2, 5), (0.8, 51), (0.17, 45))
 
 
@@ -43,6 +55,7 @@ class EvolveSpec extends FlatSpec with BeforeAndAfter with MockitoSugar{
   }
 
   it should "check for the best chromossome" in {
-    val bestGenesIdx = evolve.getBest()
+    val bestGenesIdx = evolve.getBest(mockPop)
+    assert(bestGenesIdx == 4)
   }
 }
