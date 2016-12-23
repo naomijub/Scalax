@@ -56,6 +56,6 @@ class EvolveSpec extends FlatSpec with BeforeAndAfter with MockitoSugar{
 
   it should "check for the best chromossome" in {
     val bestGenesIdx = evolve.getBest(mockPop)
-    assert(bestGenesIdx == 4)
+    assert(bestGenesIdx._2 == 4)
   }
 }

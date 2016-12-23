@@ -33,12 +33,12 @@ class Evolve {
   }
 
   //should return the whole array
-  def getBest(arg1: Array[Array[Int]]) : Int = {
+  def getBest(arg1: Array[Array[Int]]) : Tuple2[Array[Int], Int] = {
     def generateTuplesIdxFit(chromArg: Array[Int], idx: Int) : Tuple2[Double, Int] = {
       return Tuple2[Double, Int](chromosome.fitness(chromArg), idx)
     }
     val popTuples = for(i <- 0 until arg1.length) yield generateTuplesIdxFit(arg1(i), i)
     val bestIndex = popTuples.reduceLeft(max)
-    return bestIndex._2
+    return new Tuple2(arg1(bestIndex._2), bestIndex._2)
   }
 }
